@@ -1,1 +1,43 @@
-2021-02-11 14:50:08.058  WARN 5020 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-12 17:26:58.861 DEBUG 11584 --- [main] org.hibernate.SQL                        : create table docente (id bigint not null, cognome varchar(255), nome varchar(255), primary key (id)) engine=InnoDB
+2021-02-12 17:26:58.911 DEBUG 11584 --- [main] org.hibernate.SQL                        : create table hibernate_sequence (next_val bigint) engine=InnoDB
+2021-02-12 17:26:58.935 DEBUG 11584 --- [main] org.hibernate.SQL                        : insert into hibernate_sequence values ( 1 )
+2021-02-12 17:26:59.155  WARN 11584 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-12 17:27:34.865 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from docente
+2021-02-12 17:27:34.884 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 17:27:34.884 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 17:27:34.899 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into docente (cognome, nome, id) values (?, ?, ?)
+2021-02-12 17:27:34.901 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Franklin]
+2021-02-12 17:27:34.901 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Benjamin]
+2021-02-12 17:27:34.902 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [1]
+2021-02-12 17:27:34.907 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 17:27:34.907 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 17:27:34.910 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into docente (cognome, nome, id) values (?, ?, ?)
+2021-02-12 17:27:34.910 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Plutonio]
+2021-02-12 17:27:34.911 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Elio]
+2021-02-12 17:27:34.911 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [2]
+2021-02-12 17:27:34.915 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 17:27:34.919 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 17:27:34.922 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into docente (cognome, nome, id) values (?, ?, ?)
+2021-02-12 17:27:34.922 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Paperino]
+2021-02-12 17:27:34.922 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Paolino]
+2021-02-12 17:27:34.922 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [3]
+2021-02-12 17:27:34.926 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 17:27:34.927 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 17:27:34.929 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into docente (cognome, nome, id) values (?, ?, ?)
+2021-02-12 17:27:34.930 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Lezzerini]
+2021-02-12 17:27:34.930 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Luca]
+2021-02-12 17:27:34.930 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [4]
+2021-02-12 17:27:34.934 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-02-12 17:27:34.935 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-02-12 17:27:34.937 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into docente (cognome, nome, id) values (?, ?, ?)
+2021-02-12 17:27:34.937 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [Curie]
+2021-02-12 17:27:34.937 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [Marie]
+2021-02-12 17:27:34.937 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [BIGINT] - [5]
+2021-02-12 17:27:34.965 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select docente0_.id as id1_0_, docente0_.cognome as cognome2_0_, docente0_.nome as nome3_0_ from docente docente0_
+2021-02-12 17:27:34.976 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from docente where id=?
+2021-02-12 17:27:34.977 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [1]
+2021-02-12 17:27:34.980 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from docente where id=?
+2021-02-12 17:27:34.981 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [3]
+2021-02-12 17:27:34.985 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : delete from docente where id=?
+2021-02-12 17:27:34.985 TRACE 11584 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [BIGINT] - [5]
+2021-02-12 17:27:34.988 DEBUG 11584 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select docente0_.id as id1_0_, docente0_.cognome as cognome2_0_, docente0_.nome as nome3_0_ from docente docente0_

@@ -6,8 +6,18 @@
 package it.sirfin.ScuolaJPA.service;
 
 import it.sirfin.ScuolaJPA.model.Docente;
+import java.util.List;
 
 public interface ScuolaService {
 
     void inserisciDocente(Docente doc);
+
+    void cancellaDocenti();
+
+    List<Docente> ritornaLista();
+
+    void cancellareDocentiIdDispari(Docente doc);
+
+    //servizio cooridnatore perche coordina altri servizi
+    void inizializzaione();
 }
